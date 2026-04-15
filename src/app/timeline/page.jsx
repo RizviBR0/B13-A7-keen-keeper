@@ -11,11 +11,16 @@ export default function TimelinePage() {
     const { activities } = useContext(TimelineContext);
     const [filter, setFilter] = useState("All Activities");
 
-    const getIcon = (type) => {
-        if (type === "Text") return textIcon;
-        if (type === "Video") return videoIcon;
-        if (type === "Call") return callIcon;
-        return textIcon;
+    const getIcon = (filterType) => {
+        if (filterType === "Text") {
+            return textIcon
+        };
+        if (filterType === "Video") {
+            return videoIcon
+        };
+        if (filterType === "Call") {
+            return callIcon
+        };
     };
 
     const filteredActivities = activities.filter((activity) => {
@@ -23,7 +28,7 @@ export default function TimelinePage() {
             return true
         };
 
-        return activity.type + "s" === filter || activity.type === filter;
+        return activity.type === filter;
     });
 
     return (
@@ -37,15 +42,15 @@ export default function TimelinePage() {
                     onChange={(e) => setFilter(e.target.value)}
                 >
                     <option>All Activities</option>
-                    <option>Calls</option>
-                    <option>Texts</option>
+                    <option>Call</option>
+                    <option>Text</option>
                     <option>Video</option>
                 </select>
             </div>
 
             <div className="space-y-4">
                 {filteredActivities.length === 0 ? (
-                    <p className="text-gray-500">No activities found.</p>
+                    <div className="w-full flex justify-center items-center mt-16"><p className="text-gray-500">No activities found.</p></div>
                 ) : (
                     filteredActivities.map((activity) => (
                         <div
