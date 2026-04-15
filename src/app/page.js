@@ -10,7 +10,9 @@ export default async function Home() {
   ).length;
 
   const needAttentionCount = friends.filter(
-    (friend) => friend.status.toLowerCase() === "overdue" || friend.status.toLowerCase() === "almost due",
+    (friend) =>
+      friend.status.toLowerCase() === "overdue" ||
+      friend.status.toLowerCase() === "almost due",
   ).length;
 
   return (

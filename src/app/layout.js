@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
+import { TimelineProvider } from "@/context/TimelineContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +29,14 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans">
-        <header>
-          <Navbar />
-        </header>
-        <main className="container mx-auto flex-grow">{children}</main>
-        <Footer />
+        <TimelineProvider>
+          <header>
+            <Navbar />
+          </header>
+          <main className="container mx-auto">{children}</main>
+          <Footer />
+        </TimelineProvider>
+        <ToastContainer position="top-center" stacked />
       </body>
     </html>
   );

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import friends from "../../../public/friends.json";
 import { TbBellZ } from "react-icons/tb";
-import { PiArchiveBold, PiPhoneCallBold } from "react-icons/pi";
+import { PiArchiveBold } from "react-icons/pi";
 import { BiTrash } from "react-icons/bi";
-import { LuMessageSquareMore } from "react-icons/lu";
-import { RiVideoOnLine } from "react-icons/ri";
+import ActionButtons from "@/components/ActionButtons";
 
 const page = async ({ params }) => {
     const { id } = await params;
@@ -92,11 +91,7 @@ const page = async ({ params }) => {
                     <h1 className="text-[#244D3F] font-medium text-xl">
                         Quick Check-In
                     </h1>
-                    <div className="flex gap-4 flex-col sm:flex-row">
-                        <button className="bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg p-4 gap-2 text-lg text-[#1F2937] w-full flex flex-col justify-center items-center cursor-pointer hover:bg-[#edeff3]"><PiPhoneCallBold className="font-bold text-3xl text[#1F2937] " />Call</button>
-                        <button className="bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg p-4 gap-2 text-lg text-[#1F2937] w-full flex flex-col justify-center items-center cursor-pointer hover:bg-[#edeff3]"><LuMessageSquareMore className="font-bold text-3xl text[#1F2937]" />Text</button>
-                        <button className="bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg p-4 gap-2 text-lg text-[#1F2937] w-full flex flex-col justify-center items-center cursor-pointer hover:bg-[#edeff3]"><RiVideoOnLine className="font-bold text-3xl text[#1F2937]" />Video</button>
-                    </div>
+                    <ActionButtons friendName={expectedFriend.name} />
                 </div>
             </div>
         </div>
