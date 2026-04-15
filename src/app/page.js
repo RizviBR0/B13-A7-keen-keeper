@@ -6,15 +6,15 @@ export default async function Home() {
   const totalFriends = friends.length;
 
   const onTrackCount = friends.filter(
-    (friend) => friend.status === "on-track",
+    (friend) => friend.status.toLowerCase() === "on-track",
   ).length;
 
   const needAttentionCount = friends.filter(
-    (friend) => friend.status === "overdue" || friend.status === "almost due",
+    (friend) => friend.status.toLowerCase() === "overdue" || friend.status.toLowerCase() === "almost due",
   ).length;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 mb-20">
       <div className="text-center mt-16 mb-10 space-y-4">
         <h1 className="text-4xl md:text-5xl font-bold text-[#1F2937]">
           Friends to keep close in your life
@@ -59,10 +59,15 @@ export default async function Home() {
 
       <div className="divider"></div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        {friends.map((friend) => (
-          <FriendCard key={friend.id} friend={friend} />
-        ))}
+      <div>
+        <h1 className="font-semibold text-2xl text-[#1F2937] mb-4">
+          Your Friends
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {friends.map((friend) => (
+            <FriendCard key={friend.id} friend={friend} />
+          ))}
+        </div>
       </div>
     </div>
   );

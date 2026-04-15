@@ -11,8 +11,8 @@ const Navbar = () => {
 
     const links = <>
         <li className={`rounded-md ${pathname === "/" ? "bg-[#244D3F] text-white font-semibold" : ""}`}><Link href="/"><RiHome3Line />Home</Link></li>
-        <li className={`rounded-md ${pathname === "/users" ? "bg-[#244D3F] text-white font-semibold" : ""}`}><Link href="/users"><FiClock />Timeline</Link></li>
-        <li className={`rounded-md ${pathname === "/contact" ? "bg-[#244D3F] text-white font-semibold" : ""}`}><Link href="/contact"><MdOutlineQueryStats />Stats</Link></li>
+        <li className={`rounded-md ${pathname === "/timeline" ? "bg-[#244D3F] text-white font-semibold" : ""}`}><Link href="/timeline"><FiClock />Timeline</Link></li>
+        <li className={`rounded-md ${pathname === "/stats" ? "bg-[#244D3F] text-white font-semibold" : ""}`}><Link href="/stats"><MdOutlineQueryStats />Stats</Link></li>
     </>
 
     return (
