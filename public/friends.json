@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["work", "mentor"],
+    "bio": "Former colleague and a great mentor. Always gives the best career and development advice.",
+    "goal": 30,
+    "next_due_date": "2026-02-27"
+  },
+  {
+    "id": 2,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "davidk@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["work", "developer"],
+    "bio": "Collaborated on the frontend architecture project. We usually sync up to discuss React and modern UI trends.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "lisa.n@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "design"],
+    "bio": "Incredible UI/UX designer. We share a love for glassmorphism and minimalist layouts.",
+    "goal": 30,
+    "next_due_date": "2026-05-10"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "j.wright@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["hobby", "travel"],
+    "bio": "Travel buddy! Always planning the next backpacking adventure or photography trip.",
+    "goal": 30,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 5,
+    "name": "Abu Aiyed",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "aiyed.textile@example.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["close friend", "career"],
+    "bio": "Close friend from university days. We always bounce career plans and content ideas off each other.",
+    "goal": 15,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 6,
+    "name": "Shipu",
+    "picture": "https://randomuser.me/api/portraits/men/85.jpg",
+    "email": "shipu.hangouts@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["close friend", "foodie"],
+    "bio": "Always down for a restaurant hunt and organizing the group hangouts.",
+    "goal": 21,
+    "next_due_date": "2026-05-04"
+  },
+  {
+    "id": 7,
+    "name": "Al-Amin Hossain Shoyaib",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "alamin.co@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["co-founder", "tech"],
+    "bio": "Co-founder and partner in building software solutions. Constant communication about project architecture.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  }
+]
