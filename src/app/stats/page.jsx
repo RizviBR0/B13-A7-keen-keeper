@@ -29,8 +29,8 @@ const Page = () => {
                 <div className="flex justify-center items-center">
                     {activities.length === 0 ? (
                         <div className="flex flex-col justify-center items-center my-10">
-                            <Image className="text-[#64748B] opacity-15" src={pieImage} width={300} height={300} alt="Empty Pie Chart" />
-                            <p className="text-gray-500">No activities to display.</p>
+                            <Image className="text-[#64748B] opacity-15 mb-3" src={pieImage} width={300} height={300} alt="Empty Pie Chart" draggable={false} />
+                            <p className="text-[#64748B]">No activities to display.</p>
                         </div>
                     ) : (
                         <PieChart style={{ width: '100%', maxWidth: '350px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
