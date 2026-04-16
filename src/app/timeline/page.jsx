@@ -10,6 +10,7 @@ import videoIcon from "../../assets/video.png";
 export default function TimelinePage() {
     const { activities } = useContext(TimelineContext);
     const [filter, setFilter] = useState("All Activities");
+    const [sort, setSort] = useState("Newest");
 
     const getIcon = (filterType) => {
         if (filterType === "Text") {
@@ -31,21 +32,50 @@ export default function TimelinePage() {
         return activity.type === filter;
     });
 
+
     return (
         <div className="max-w-4xl mx-auto py-12 px-6">
             <h1 className="text-[#1F2937] font-bold text-4xl mb-6">Timeline</h1>
 
-            <div className="mb-8">
-                <select
-                    className="select select-bordered w-full max-w-xs border-[#E9E9E9] text-[#64748B]"
-                    value={filter}
-                    onChange={(e) => setFilter(e.target.value)}
-                >
-                    <option>All Activities</option>
-                    <option>Call</option>
-                    <option>Text</option>
-                    <option>Video</option>
-                </select>
+            <div className="mb-8 flex flex-row justify-between items-center gap-6">
+                <div className="flex gap-6">
+                    <select
+                        className="select select-bordered w-40 max-w-xs border-[#E9E9E9] text-[#64748B]"
+                        value={filter}
+                        onChange={(e) => setFilter(e.target.value)}
+                    >
+                        <option>All Activities</option>
+                        <option>Call</option>
+                        <option>Text</option>
+                        <option>Video</option>
+                    </select>
+
+                    <select
+                        className="select select-bordered w-40 max-w-xs border-[#E9E9E9] text-[#64748B]"
+                        value={sort}
+                        onChange={(e) => setSort(e.target.value)}
+                    >
+                        <option disabled={true}>Sort By</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+                    </select>
+                </div>
+
+                <label className="input">
+                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g
+                            strokeLinejoin="round"
+                            strokeLinecap="round"
+                            strokeWidth="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input type="search" required placeholder="Search" />
+                </label>
             </div>
 
             <div className="space-y-4">
