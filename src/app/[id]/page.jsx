@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import friends from "../../../public/friends.json";
 import { TbBellZ } from "react-icons/tb";
 import { PiArchiveBold } from "react-icons/pi";
@@ -8,6 +9,10 @@ import ActionButtons from "@/components/ActionButtons";
 const page = async ({ params }) => {
     const { id } = await params;
     const expectedFriend = friends.find(f => f.id === Number(id));
+
+    if (!expectedFriend) {
+        notFound();
+    }
 
     let statusColor = "";
 
