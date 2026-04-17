@@ -42,7 +42,7 @@ export default function TimelinePage() {
     }
 
     return (
-        <div className="max-w-4xl mx-auto py-12 px-6">
+        <div className="max-w-4xl mx-auto pt-12 px-6">
             <h1 className="text-[#1F2937] font-bold text-4xl mb-6">Timeline</h1>
 
             <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-6">

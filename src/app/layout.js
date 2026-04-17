@@ -33,7 +33,9 @@ export default function RootLayout({ children }) {
           <header>
             <Navbar />
           </header>
+
           <main className="container mx-auto">{children}</main>
+          
           <Footer />
         </TimelineProvider>
         <ToastContainer position="top-center" stacked />

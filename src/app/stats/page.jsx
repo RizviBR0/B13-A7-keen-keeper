@@ -20,10 +20,10 @@ const Page = () => {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto py-12 px-6">
+        <div className="max-w-4xl mx-auto pt-12 px-6">
             <h1 className="text-[#1F2937] font-bold text-4xl mb-6">Friendship Analytics</h1>
 
-            <div className="mb-8 space-y-6 bg-white p-8 rounded-lg shadow-sm">
+            <div className="space-y-6 bg-white p-8 rounded-lg shadow-sm">
                 <p className="text-xl font-medium text-[#244D3F]">By Interaction Type</p>
 
                 <div className="flex justify-center items-center">
@@ -51,7 +51,7 @@ const Page = () => {
                     )}
                 </div>
 
-                <div className="flex items-center justify-center gap-6">
+                <div className="flex items-center justify-center gap-6 flex-wrap">
                     <div className="flex justify-center items-center gap-1">
                         <div className="rounded-full bg-[#7E35E1] w-3 h-3"></div>Text
                     </div>

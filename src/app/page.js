@@ -16,7 +16,7 @@ export default async function Home() {
   ).length;
 
   return (
-    <div className="space-y-6 mb-20">
+    <div className="space-y-6">
       <div className="text-center mt-16 mb-10 space-y-4">
         <h1 className="text-4xl md:text-5xl font-bold text-[#1F2937]">
           Friends to keep close in your life

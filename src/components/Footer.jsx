@@ -33,7 +33,7 @@ export default function Footer() {
 
                 <div className="w-full border-t border-[#ffffff1a] pt-8 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm gap-4">
                     <p>&copy; 2026 KeenKeeper. All rights reserved.</p>
-                    <div className="flex gap-8">
+                    <div className="flex sm:flex-row flex-col justify-center items-center gap-2 sm:gap-8">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
                         <a href="#" className="hover:text-white transition-colors">Cookies</a>
