@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Keen Keeper
 
-## Getting Started
+## Short Description
 
-First, run the development server:
+Keen Keeper is a personalized web application built with Next.js designed to manage, track, and celebrate your friendships. It provides a dedicated space to maintain details about your social circle, log an ongoing timeline of interactions, and view statistics to ensure you stay closely connected with the people who matter most.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**
+- **App router(Next.js)**
+- **JavaScript / JSX**
+- **Tailwind CSS**
+- **daisyUI**
+- **Recharts**
+- **React toastify**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 3 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Interactive Friend Profiles**: Store and showcase detailed profiles for your social circle, and also you can call, text, or message them.
+2. **Timeline Tracking**: You can track all the interactions you've made with friends from the timeline log. Also, you can filter, sort, and search through the history.
+3. **Friendship Statistics**: Visualize metrics and patterns about your social activity to help you maintain consistent relationships over time.
